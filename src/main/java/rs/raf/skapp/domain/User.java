@@ -28,4 +28,7 @@ public class User {
     @OneToMany(mappedBy = "owner")
     private List<Post> posts;
 
+    @ManyToMany(mappedBy = "users")
+    private List<Page> pages;
+
 }
